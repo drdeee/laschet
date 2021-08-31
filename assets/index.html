@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>
+			#LaschetLasset
+		</title>
+		<meta charset="utf-8">
+<style>
+#sticker { width: 100%; }
+textarea { display: block; width: 100%}
+</style>
+	</head>
+	<body>
+		<h1>
+			#LaschetLasset
+		</h1>
+		<p>
+			Ob gewürfelte Noten, katastrophaler Katastrophenschutz oder unpassendes Lachen:
+			Laschet und die CDU zeigen regelmäßig, dass sie nicht zum sinnvollen Regieren in der Lage sind.
+
+			Erstelle daher jetzt hier deine ganz persönliche #LaschetLasset Valentinskarte:
+		</p>
+		<textarea id="greetings">
+			Willst du mit mir deine Zukunft zerstören?
+		</textarea>
+		<svg id="sticker" version="1.1" viewBox="0 0 3412 1706" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<rect x=".00012207" y="2.2278" width="3412" height="1702.2" fill="#e42129" stroke-linecap="round" stroke-width="17.772"/>
+			<image x="1598" y="2.6645e-14" width="1814" height="1709.8" preserveAspectRatio="none" xlink:href="./laschet.png"/>
+			<foreignObject
+				x="80" y="50" width="2400" height="1000"
+			>
+				<xhtml:div style="display:flex; height: 100%; align-items: center">
+					<xhtml:p
+						style="font-size: 220px; color: white; font-family:'Jost*'; font-weight: 600; text-align: center; line-height: 1"
+						id="text-box">
+					</xhtml:p>
+				</xhtml:div>
+			</foreignObject>
+			<image x="50" y="1100" width="560.2" preserveAspectRatio="none" xlink:href="./fff_logo.jpg"/>
+		</svg>
+		<script>
+			const textarea = document.getElementById("greetings");
+			const text = document.getElementById("text-box");
+
+			textarea.addEventListener("input", (event) => {
+				text.innerText = textarea.value;
+			});
+		</script>
+	</body>
+</html>
